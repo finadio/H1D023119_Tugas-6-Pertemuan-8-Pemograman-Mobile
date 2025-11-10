@@ -167,19 +167,4 @@ h1d023119_tugas6/
 └── README.md
 ```
 
----
-
-## Teknologi yang Digunakan
-- **Flutter SDK** v3.35.7
-- **Dart** v3.9.2
-- **Material Design** untuk UI/UX
-
-## Fitur
-- ✨ Input data mahasiswa (Nama, NIM, Tahun Lahir)
-- 🧮 Perhitungan otomatis umur berdasarkan tahun lahir
-- 📱 UI responsif dengan desain modern dan clean
-- 🎨 Material Design dengan Card, Icons, dan styling yang konsisten
-
----
-
 **© 2025 - Fina Julianti (H1D023119)**
