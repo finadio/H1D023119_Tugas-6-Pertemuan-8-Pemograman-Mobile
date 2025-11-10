@@ -104,11 +104,6 @@ class TampilData extends StatelessWidget {
 }
 ```
 
-### Keuntungan Metode Ini:
-- ✅ **Sederhana dan langsung** - Data dikirim tanpa perlu global state
-- ✅ **Type-safe** - Tipe data jelas melalui parameter required
-- ✅ **Mudah di-debug** - Alur data terlihat eksplisit
-
 ---
 
 ## Cara Menjalankan
@@ -174,63 +169,7 @@ lib/
 └── ui/
     ├── form_data.dart  # Halaman form input data mahasiswa
     └── tampil_data.dart # Halaman hasil tampilan data
-```
-
----
-
-## Cara Menjalankan
-
-```powershell
-flutter pub get
-flutter run -d chrome
-```
-
-## Struktur Direktori
-
-```
-lib/
-├── main.dart           # Entry point aplikasi
-└── ui/
-    ├── form_data.dart  # Halaman form input data mahasiswa
-    └── tampil_data.dart # Halaman hasil tampilan data
-screenshots/
-├── form_input.png      # Screenshot form terisi
-├── form_empty.png      # Screenshot form kosong
-└── tampil_data.png     # Screenshot halaman hasil
-```
-
----
-
-## Teknologi yang Digunakan
-- **Flutter SDK** v3.35.7
-- **Dart** v3.9.2
-- **Material Design** untuk UI/UX
-
-## Fitur
-- ✨ Input data mahasiswa (Nama, NIM, Tahun Lahir)
-- 🧮 Perhitungan otomatis umur berdasarkan tahun lahir
-- 📱 UI responsif dengan desain modern dan clean
-- 🎨 Material Design dengan Card, Icons, dan styling yang konsisten
 
 ---
 
 **© 2024 - Fina Julianti (H1D023119)**
-## Screenshot Aplikasi
-
-### 1. Halaman Form Input
-Halaman ini menampilkan form dengan field:
-- **Nama**
-- **NIM**
-- **Tahun Lahir**
-- Tombol **Simpan**
-
-### 2. Halaman Form Terisi
-Contoh data yang diinput:
-- Nama: Fina Julianti
-- NIM: H1D023119
-- Tahun Lahir: 2004
-
-### 3. Halaman Perkenalan
-Menampilkan output dalam bentuk paragraf:
-
-> "Nama saya Fina Julianti, NIM H1D023119, dan umur saya adalah 21 tahun"
