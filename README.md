@@ -104,33 +104,15 @@ class TampilData extends StatelessWidget {
 }
 ```
 
+### Keuntungan Metode Ini:
+- ✅ **Sederhana dan langsung** - Data dikirim tanpa perlu global state
+- ✅ **Type-safe** - Tipe data jelas melalui parameter required
+- ✅ **Mudah di-debug** - Alur data terlihat eksplisit
+
 ---
 
-## Cara Menjalankan
-
-Jalankan seperti project Flutter biasa:
-
-```powershell
-flutter pub get
-
-class TampilData extends StatelessWidget {flutter run
-
-  final String nama;```
-
-  final String nim;
-  final int tahun;
-
-  const TampilData({
-    super.key,
-    required this.nama,
-    required this.nim,
-    required this.tahun,
-  });
-```
-
-Kata kunci `required` memastikan bahwa ketiga data tersebut wajib dikirimkan saat membuat instance widget `TampilData`.
-
 ### 4. Menampilkan dan Memproses Data
+
 Data yang diterima kemudian digunakan untuk ditampilkan di UI dan melakukan kalkulasi sederhana (menghitung umur):
 
 ```dart
@@ -161,16 +143,43 @@ TampilData (tampil_data.dart)
 
 ---
 
+## Cara Menjalankan
+
+```powershell
+flutter pub get
+flutter run -d chrome
+```
+
 ## Struktur Direktori
 
 ```
-lib/
-├── main.dart           # Entry point aplikasi
-└── ui/
-    ├── form_data.dart  # Halaman form input data mahasiswa
-    └── tampil_data.dart # Halaman hasil tampilan data
+h1d023119_tugas6/
+├── lib/
+│   ├── main.dart           # Entry point aplikasi
+│   └── ui/
+│       ├── form_data.dart  # Halaman form input data mahasiswa
+│       └── tampil_data.dart # Halaman hasil tampilan data
+├── screenshots/
+│   ├── form_input.png      # Screenshot form terisi
+│   ├── form_empty.png      # Screenshot form kosong
+│   └── tampil_data.png     # Screenshot halaman hasil
+├── pubspec.yaml
+└── README.md
+```
 
 ---
 
-**© 2024 - Fina Julianti (H1D023119)**
-```
+## Teknologi yang Digunakan
+- **Flutter SDK** v3.35.7
+- **Dart** v3.9.2
+- **Material Design** untuk UI/UX
+
+## Fitur
+- ✨ Input data mahasiswa (Nama, NIM, Tahun Lahir)
+- 🧮 Perhitungan otomatis umur berdasarkan tahun lahir
+- 📱 UI responsif dengan desain modern dan clean
+- 🎨 Material Design dengan Card, Icons, dan styling yang konsisten
+
+---
+
+**© 2025 - Fina Julianti (H1D023119)**
